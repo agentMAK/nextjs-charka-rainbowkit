@@ -3,10 +3,11 @@
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
 
+
 export function Charka({
-    children 
-  }: { 
-  children: React.ReactNode 
+    children
+  }: {
+  children: React.ReactNode
   }) {
   return (
     <CacheProvider>
