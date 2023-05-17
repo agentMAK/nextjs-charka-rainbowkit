@@ -1,7 +1,7 @@
 "use client";
 
 import "./globals.css";
-import { Charka } from "./charka";
+import { Chakra } from "./chakra";
 
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
@@ -36,11 +36,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Charka>
+        <Chakra>
           <WagmiConfig config={wagmiConfig}>
             <RainbowKitProvider chains={chains}>{children}</RainbowKitProvider>
           </WagmiConfig>
-        </Charka>
+        </Chakra>
       </body>
     </html>
   );
